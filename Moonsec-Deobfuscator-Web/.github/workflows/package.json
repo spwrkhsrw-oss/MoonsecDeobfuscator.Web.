@@ -1,0 +1,16 @@
+{
+  "name": "moonsec-deobfuscator-web",
+  "version": "1.0.0",
+  "description": "Web interface for Moonsec Lua deobfuscation",
+  "scripts": {
+    "start": "cd backend && python app.py",
+    "dev": "concurrently \"cd backend && python app.py\" \"live-server frontend --port=3000\"",
+    "build": "echo 'Build complete'",
+    "deploy": "gh-pages -d frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.2",
+    "gh-pages": "^5.0.0"
+  }
+}
